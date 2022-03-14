@@ -1,19 +1,14 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+int main() {    
 
-int main()
-{
-    int a = 5, b = 10, temp;
+    int number1, number2, sum;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d", &number1, &number2);
 
-    cout << "Before swapping." << endl;
-    cout << "a = " << a << ", b = " << b << endl;
-
-    temp = a;
-    a = b;
-    b = temp;
-
-    cout << "\nAfter swapping." << endl;
-    cout << "a = " << a << ", b = " << b << endl;
-
+    // calculating sum
+    sum = number1 + number2;      
+    
+    printf("%d + %d = %d", number1, number2, sum);
     return 0;
 }
